@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Besley');
+
+* {
+    background-color: #f4c67e;
+    padding: 10px;
+    border-radius: 0px;
+    display: grid;
+}
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+.nav-link {
+   font-family: 'Besley', serif;
+   color: #1f0100;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 2.5em;
+}
+
+.nav-link:hover {
+    color: #b0341a;
+}
+
+.nav-bar {
+    grid-auto-flow: column;
+    border-bottom: 5px solid #b0341a;
+}
+
+.search {
+    grid-auto-flow: column;
+}
