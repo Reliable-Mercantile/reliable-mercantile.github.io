@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<nav class="nav-bar">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+  <nav class="nav-bar" id="navBar">
+    <a href="/" class="nav-link"> <img src="images/RM_logo.png" alt="Reliable Mercantile" width="100%" height="auto"></a>
+    <div></div>
     <a href="/about" class="nav-link">about</a>
-    <a href="/shop" class="nav-link">shop</a>
+    <!-- <a href="/shop" class="nav-link">shop</a>
     <a href="/services" class="nav-link">services</a>
     <a href="/calendar" class="nav-link">calendar</a>
-</nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a> -->
+  </nav>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navBar");
+      if (x.className === "nav-bar") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-bar";
+      }
+    }
+  </script>
+</body>
 </html>
