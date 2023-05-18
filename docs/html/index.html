@@ -9,7 +9,7 @@
   <nav class="nav-bar" id="navBar">
     <a href="/" class="nav-link"> <img src="images/RM_logo.png" alt="Reliable Mercantile" width="100%" height="auto"></a>
     <div></div>
-    <a href="/about" class="nav-link">about</a>
+    <a href="#about" class="nav-link" onclick="currentPage(event, 'about')">about</a>
     <!-- <a href="/shop" class="nav-link">shop</a>
     <a href="/services" class="nav-link">services</a>
     <a href="/calendar" class="nav-link">calendar</a>
@@ -18,13 +18,13 @@
     </a> -->
   </nav>
   <script>
-    function myFunction() {
-      var x = document.getElementById("navBar");
-      if (x.className === "nav-bar") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav-bar";
+    function currentPage(evt, pageName) {
+      var i, x, navlinks;
+      navlinks = document.getElementsByClassName("nav-link");
+      for (i = 0; i < navlinks.length; i++) {
+        navlinks[i].className = navlinks[i].className.replace(" active", "");
       }
+      evt.currentTarget.className += " active";
     }
   </script>
 </body>

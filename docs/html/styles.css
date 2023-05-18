@@ -36,9 +36,19 @@ html, body, nav {
    font-size: 2.5em;
 }
 
+.nav-link.active {
+    color: #b0341a;
+}
+
+
 .nav-bar a:hover {
     color: #b0341a;
 }
+
+.nav-bar a:active {
+    filter: brightness(75%);
+}
+
 
 @media only screen and (max-width: 600px) {
     .nav-bar a:not(:first-child) {display: none;}
