@@ -1,9 +1,4 @@
-import { Typography } from '@mui/material';
 import React from 'react';
-
-export const Contact = () => {
-    return (<Typography>"Oh dear"</Typography>);
-}
 
 export const ContactForm = () => {
     return (
