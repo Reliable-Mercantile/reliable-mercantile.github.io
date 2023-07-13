@@ -1,8 +1,13 @@
 import React from 'react';
-import { PersonDescription } from './PersonDescription';
+import { Home } from '../Home';
+import { creators } from '../../pseudo_database/creators';
+import { AllCreatorDescriptions } from './PersonDescription';
 
 export const About = () => {
     return (
-        <PersonDescription/>
+        <>
+        <Home/>
+        <AllCreatorDescriptions creators={creators}/>
+        </>
     )
 };

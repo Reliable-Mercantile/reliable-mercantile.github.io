@@ -13,8 +13,6 @@ img {
 
 h1, h2, h3, h4, p {
     font-family: 'Besley', serif;
-    display: grid;
-    justify-content: center;
 }
 
 html, body, nav {
@@ -27,9 +25,9 @@ html, body, nav {
 .nav-bar {
     grid-auto-flow: column;
     border-bottom: 5px solid #b0341a;
-    grid-template-columns: 64px 10fr min-content;
+    grid-template-columns: 64px 10fr min-content min-content max-content;
     align-items: center;
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     padding: 10px;
     height: min-content;
 }
