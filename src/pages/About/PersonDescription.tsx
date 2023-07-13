@@ -32,7 +32,7 @@ interface AllCreatorDescriptionsProps {
 export const AllCreatorDescriptions = ({creators}: AllCreatorDescriptionsProps) => {
     // return creators.map(creator => { <CreatorDescription creator={creator}/> })
     return (
-        <div style={{justifyContent: "space-between", display: "grid", gridTemplateRows: "repeat(auto, 1fr)"}}>
+        <div style={{justifyContent: "space-between", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr"}}>
         <CreatorDescription creator={watson}/>
         <CreatorDescription creator={elli}/>
         <CreatorDescription creator={cecelia}/>
