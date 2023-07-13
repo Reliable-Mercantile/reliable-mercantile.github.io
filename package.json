@@ -23,7 +23,7 @@
     },
     "scripts": {
       "start": "react-scripts start",
-      "build": "react-scripts build && touch docs && mv build/* docs",
+      "build": "rm -fr docs && react-scripts build && mkdir -p docs && mv build/* docs && rm -fr build",
       "test": "react-scripts test",
       "eject": "react-scripts eject"
     },
