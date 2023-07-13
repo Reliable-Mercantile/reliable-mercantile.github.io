@@ -9,7 +9,7 @@ interface CreatorDescriptionProps {
 export const CreatorDescription = ({creator}: CreatorDescriptionProps) => {
     return (
         <div style={{display: "grid", rowGap: "5px"}}>
-        <img style={{height: "auto", maxWidth: "150px", borderRadius: "50%"}} src={window.location.origin + creator.image} alt={creator.name.split(" ")[0] + " Logo"}/>
+        <img style={{height: "auto", maxWidth: "150px", borderRadius: "50%", border: ""}} src={window.location.origin + creator.image} alt={creator.name.split(" ")[0] + " Logo"}/>
         <Typography variant='subtitle1'>{creator.name}</Typography>
         <Typography variant="body1">{creator.description}</Typography>
         {creator.links ? creator.links.patreon ? 
