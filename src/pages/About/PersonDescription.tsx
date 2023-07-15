@@ -28,7 +28,7 @@ export const CreatorDescription = ({creator}: CreatorDescriptionProps) => {
 
 export const AllCreatorDescriptions = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
-    const breakpoint = 700;
+    const breakpoint = 750;
 
     React.useEffect(() => {
         const handleResizeWindow = () => setWidth(window.innerWidth);

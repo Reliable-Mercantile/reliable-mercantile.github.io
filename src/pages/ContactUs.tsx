@@ -42,7 +42,8 @@ export const ContactUs = () => {
     const [state, handleSubmit] = useForm("mpzgznkq");
     return (
         <>
-                <Typography variant="h4">Have a project you want our help with? Contact us:</Typography>
+                <Typography variant="h4">Have a project you want our help with?</Typography>
+                <Typography variant="h5">Contact us:</Typography>
                 <FormGroup 
                 onSubmit={handleSubmit}
                 style={{display: "grid",
