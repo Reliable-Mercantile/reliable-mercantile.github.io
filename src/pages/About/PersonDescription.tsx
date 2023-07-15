@@ -1,6 +1,7 @@
 import { Button, Typography } from '@mui/material';
 import React from 'react';
 import { Creator, watson, cecelia, elli, blythe } from '../../pseudo_database/creators';
+import styled from '@emotion/styled';
 
 interface CreatorDescriptionProps {
     creator : Creator;
@@ -25,18 +26,38 @@ export const CreatorDescription = ({creator}: CreatorDescriptionProps) => {
     )
 };
 
-interface AllCreatorDescriptionsProps {
-    creators : Creator[];
-}
+export const AllCreatorDescriptions = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 700;
 
-export const AllCreatorDescriptions = ({creators}: AllCreatorDescriptionsProps) => {
-    // return creators.map(creator => { <CreatorDescription creator={creator}/> })
-    return (
-        <div style={{justifyContent: "space-between", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr"}}>
-        <CreatorDescription creator={watson}/>
-        <CreatorDescription creator={elli}/>
-        <CreatorDescription creator={cecelia}/>
-        <CreatorDescription creator={blythe}/>
-        </div>
-    )
+    React.useEffect(() => {
+        const handleResizeWindow = () => setWidth(window.innerWidth);
+         // subscribe to window resize event "onComponentDidMount"
+         window.addEventListener("resize", handleResizeWindow);
+         return () => {
+           // unsubscribe "onComponentDestroy"
+           window.removeEventListener("resize", handleResizeWindow);
+         };
+       }, []);
+
+    if (width > breakpoint) {
+        return (
+            <div style={{justifyContent: "space-between", display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr"}}>
+            <CreatorDescription creator={watson}/>
+            <CreatorDescription creator={elli}/>
+            <CreatorDescription creator={cecelia}/>
+            <CreatorDescription creator={blythe}/>
+            </div>
+        )
+    } else {
+        return (
+            <div style={{justifyContent: "space-between", display: "grid", gridTemplateRows: "1fr 1fr 1fr 1fr"}}>
+            <CreatorDescription creator={watson}/>
+            <CreatorDescription creator={elli}/>
+            <CreatorDescription creator={cecelia}/>
+            <CreatorDescription creator={blythe}/>
+            </div>
+        )
+    }
+    
 }

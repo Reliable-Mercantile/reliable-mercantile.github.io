@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <>
         <Home/>
-        <AllCreatorDescriptions creators={creators}/>
+        <AllCreatorDescriptions/>
         </>
     )
 };

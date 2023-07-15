@@ -17,7 +17,7 @@ export const Layout = () => {
     return (
         <>
             <Header/>
-            <div style={{maxWidth: "1240px", minWidth: "750px", justifyContent: "flex-start", display: "grid", rowGap: "20px", gridTemplateRows: "repeat(auto, auto)"}}>
+            <div style={{maxWidth: "1240px", minWidth: "500px", width: "90vw", justifyContent: "flex-start", display: "grid", rowGap: "20px", gridTemplateRows: "repeat(auto, auto)"}}>
                 <Outlet/>
             </div>
         </>
