@@ -8,7 +8,7 @@ import { ContactUs } from './pages/ContactUs';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
-const theme = createTheme({
+export const rm_theme = createTheme({
   typography: {
     fontFamily: [
      'Besley', 'serif'
@@ -29,7 +29,7 @@ const theme = createTheme({
 
 function App() {
   return (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={rm_theme}>
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Layout />}>
