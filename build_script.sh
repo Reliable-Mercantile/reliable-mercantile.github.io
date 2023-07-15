@@ -15,4 +15,4 @@ rm -fr build;
 
 # Add js script that enables github.io to not freak out at the fact that this is a single page application. This fixes the fact that refreshing on a subpage results in you being redirected to a github 404 page.
 cp public/404.html docs/404.html;
-sed -n -i -e '/<div id="root">/r public/github_single_page_app.html' -e 1x -e '2,${x;p}' -e '${x;p}' docs/index.html;
+cat public/github_single_page_app.html >> docs/index.html;
