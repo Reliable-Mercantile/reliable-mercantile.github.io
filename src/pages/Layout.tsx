@@ -37,7 +37,7 @@ const Header = () => {
     } else {
         return (
             <>
-            <nav className="nav-bar" id="navBarMobile" style={{gridTemplateColumns: "64px 10fr min-content"}}>
+            <nav className="nav-bar" id="navBarMobile" style={{gridTemplateColumns: "64px 10fr min-content", overflow: "visible"}}>
                 <Link to="/"><img src={window.location.origin + "/images/RM_logo.png"} alt="Reliable Mercantile Logo" width="100%" height="auto"/></Link>
                 <div/>
                 <IconButton
