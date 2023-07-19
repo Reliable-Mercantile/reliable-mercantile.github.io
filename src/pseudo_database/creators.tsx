@@ -20,7 +20,7 @@ export type SocialMediaLinks = {
 
 export const watson : Creator = {
     name: "T.X. Watson",
-    description: "T.X. Watson is a content creator and public scholar whose research focuses on emerging media and the relationships creators have with their audiences. They have a background in memetics and journalism, and have also been known to freelance as UX designer and graphic artist, using their unique skillset to create engaging and visually captivating experiences for end users.",
+    description: "T.X. Watson is a content creator and public scholar whose research focuses on emerging media and the relationships creators have with their audiences. They have a background in memetics and journalism, and freelance as as UX designer and graphic artist, using their unique skillset to create engaging and visually captivating experiences for end users.",
     consultationOfferings: ["visual art", "graphic design", "UX design"],
     roles: ["Core", "Artist", "Admin"],
     image: "/images/watson_logo.png",
