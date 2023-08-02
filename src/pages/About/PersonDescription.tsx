@@ -10,7 +10,7 @@ interface CreatorDescriptionProps {
 export const CreatorDescription = ({creator}: CreatorDescriptionProps) => {
     const theme = useTheme();
     return (
-        <div style={{display: "grid", rowGap: "10px", gridTemplateRows: "min-content min-content 1fr min-content"}}>
+        <div style={{display: "grid", padding: "10px", rowGap: "10px", gridTemplateRows: "min-content min-content 1fr min-content"}}>
         <img style={{height: "auto", maxWidth: "150px", borderRadius: "50%", border: `3px solid ${theme.palette.primary}`}} src={window.location.origin + creator.image} alt={creator.name.split(" ")[0] + " Logo"}/>
         <Typography variant='subtitle1'>{creator.name}</Typography>
         <Typography variant="body1">{creator.description}</Typography>

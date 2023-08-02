@@ -9,7 +9,7 @@ interface ServiceDescriptionProps {
 
 export const ServiceDescription = ({service}: ServiceDescriptionProps) => {
     return (
-<Card square elevation={2} style={{maxWidth: "40em"}}>
+<Card square elevation={2} sx={{maxWidth: "50em", width: "30vw", minWidth: "425px"}}>
       <CardMedia
         component="img"
         alt={service.name}
@@ -24,10 +24,10 @@ export const ServiceDescription = ({service}: ServiceDescriptionProps) => {
           {service.description}
         </Typography>
       </CardContent>
-      {/* <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions> */}
+      {service.link ? 
+      <CardActions>
+        <Button  variant="contained" href={service.link} target="_blank" size="small">Learn More</Button>
+      </CardActions> : ""}
     </Card>) };
 
 
@@ -46,7 +46,7 @@ export const AllServiceDescriptions = () => {
        }, []);
 
     return (
-        <div style={{justifyContent: "space-between", display: "grid", gridGap: "10px", gridTemplateColumns: "repeat(auto-fit, 150px))"}}>
+        <div style={{justifyContent: "space-around", display: "flex", gap: "10px",flexFlow: "wrap"}}>
             <ServiceDescription service={primordium}/>
             <ServiceDescription service={watson_patreon}/>
             <ServiceDescription service={cecelia_patreon}/>

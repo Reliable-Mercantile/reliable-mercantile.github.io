@@ -10,10 +10,10 @@ const TextSection = styled.div`
 export const Services = () => {
     return (
         <>
-            <Typography variant="h3">
+            <Typography variant="h4">
                 Let us know what you have in mind!
             </Typography>
-            <Typography variant="h4">
+            <Typography>
                 But if you must order on-menu, the following goods and/or services are available by various means through Reliable Mercantile members:
             </Typography>
             <TextSection>
