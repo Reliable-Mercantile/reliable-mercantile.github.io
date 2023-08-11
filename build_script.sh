@@ -9,6 +9,7 @@ react-scripts build;
 #create the docs directory and move stuff into it (Github.io requires that the files either be in the root fold or in a folder titled docs)
 mkdir -p docs;
 mv build/* docs;
+mv CNAME docs/CNAME;
 
 #delete the now empty directory 
 rm -fr build;
