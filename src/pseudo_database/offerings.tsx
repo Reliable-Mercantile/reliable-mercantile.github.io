@@ -9,7 +9,7 @@ export type Offering = {
 
 export const primordium : Offering = {
     name: "The Primordium Reading Group",
-    description: "Primordium is a weekly reading group hosted by T.X. Watson, Elli Peacock, Han Koehle, The Woodmother, Kenna Pearl, and Evan Diem. You can tune in for a reading and live discussion of the text on Thursdays at 6:30 p.m. ET. Backing any of these creators on Patreon or backing Elli on Twitch (theeclecticlibrary) gets you access to the Primordium Discord server, where you can join the closed-group discussion of the text with participation open to all members! We read science fiction and fantasy short stories, accessible film and literary theory academic papers, poetry, essays, we’ve even done a couple movies and an album!",
+    description: "Primordium is a weekly reading group hosted by T.X. Watson, Elli Peacock, Lokeigh, Han Koehle, The Woodmother, Kenna Pearl, and Evan Diem. You can tune in for a reading and live discussion of the text on Thursdays at 6:30 p.m. ET. Backing any of these creators on Patreon or backing Elli on Twitch (theeclecticlibrary) gets you access to the Primordium Discord server, where you can join the closed-group discussion of the text with participation open to all members! We read science fiction and fantasy short stories, accessible film and literary theory academic papers, poetry, essays, we’ve even done a couple movies and an album!",
     image: "/images/primordium.jpeg"
 }
 
